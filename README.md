@@ -1,4 +1,4 @@
-# election-analysis
+# Election Analysis
 Python analysis practice using data relating to differently-formatted ballot counts. 
 
 ## Steps Overview
@@ -16,6 +16,7 @@ The following tasks were included in the original summary analysis:
 
 ## Summary
 The summary analysis found:
+
 Candidates:
 * Charles Casper Stockham
 * Diana DeGette
