@@ -33,7 +33,7 @@ Diana DeGette: 73.8% (272,892)
 Raymon Anthony Doane: 3.1% (11,606)
 ```
 ## Overview of Election Audit
-For the second part of this exercise, an audit was performed to summarize the ballot data by county. The goals of this additional analysis were to identify how many votes were cast from each county present in the data, and to summarize the total number and percent of total votes cast from that county.
+For the second part of this exercise, an audit was performed to summarize the ballot data by county (as requested by the election commission). The goals of this additional analysis were to identify how many votes were cast from each county present in the data, and to summarize the total number and percent of total votes cast from that county.
 
 ## Election-Audit Results
 * How many votes were cast in this congressional election?
@@ -55,7 +55,7 @@ The above referenced the terminal output of this analysis, as shown below:
 ![](./Resources/Deliverable1.png)
 
 ## Election-Audit Summary
-This script is fairly flexible and can be used to summarize data from any election. This is because the list of elements used to group vote counts (here, Candidate or County Name) is dynamically generated, instead of being hardcoded as search parameters (see the first piece of my VBA analysis script for an example of what this *doesn't* need to do).
+This script is fairly flexible and can be used to summarize data from any election. This is because the list of elements used to group vote counts (here, Candidate or County Name) is dynamically generated, instead of being hardcoded as search parameters (see the first piece of ![my VBA analysis script](https://github.com/frankfeder/stocks-analysis/blob/main/VBA_Challenge.vbs) for an example of what this *doesn't* need to do).
 
 This is done through creating an empty dictionary and filling it with a key/value pair of "grouping element name"/"total matching records count", as below as we iterate through each row:
 ```
