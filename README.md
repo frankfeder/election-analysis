@@ -51,7 +51,9 @@ For the second part of this exercise, an audit was performed to summarize the ba
 * Which candidate won the election, what was their vote count, and what was their percentage of the total votes?
     - The winner of this election was Diana DeGette. She won in a landslide, with 73.8% of all votes cast for her (272,892 votes).
 The above referenced the terminal output of this analysis, as shown below:
+
 ![](./Resources/Deliverable1.png)
+
 ## Election-Audit Summary
 This script is fairly flexible and can be used to summarize data from any election. This is because the list of elements used to group vote counts (here, Candidate or County Name) is dynamically generated, instead of being hardcoded as search parameters (see the first piece of my VBA analysis script for an example of what this *doesn't* need to do).
 
@@ -92,4 +94,4 @@ winning_county_summary = (
         f"% of All Votes Cast From H.T. County: {highest_turnout_county_pct:.1f}%\n"
         f"-------------------------\n\n")
 ```
-If the data had another feature we'd like to group by (voter ZIP code for example) it would be the third time we would be duplicating code and only minor changes. My final recommendation to make this script more robust would be to abstract the generation of the text blocks per summarized feature. One possible implementation could be an input prompt that asks the user to provide the index and name of the feature they'd like to summarize. A different implementation could define a dictionary of {features:indices} that are then iterated through to allow for the summarization of many features very quickly.
+If the data had another feature we'd like to group by (voter ZIP code for example) it would be the third time we would be duplicating code and making only minor changes. My final recommendation to make this script more robust would be to abstract the generation of the text blocks per summarized feature. One possible implementation could be an input prompt that asks the user to provide the index and name of the feature they'd like to summarize. A different implementation could define a dictionary of {features:indices} that are then iterated through to allow for the summarization of many features very quickly.
